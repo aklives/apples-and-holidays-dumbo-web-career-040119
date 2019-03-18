@@ -59,13 +59,13 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |k, v|
     puts "#{k}"
-    
+
      holiday_hash[:winter].each do |k, v|
        puts "  #{k}: #{v.join(" ")}"
      end
   end
-    
-    
+
+
 end
 
 def all_holidays_with_bbq(holiday_hash)
