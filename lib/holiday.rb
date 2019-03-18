@@ -59,7 +59,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |k, v|
     puts "#{k.capitalize}:"
-    
+
      holiday_hash[k].each do |k, v|
        if k == :new_years
          puts "  New Years: #{v.join(", ")}"
