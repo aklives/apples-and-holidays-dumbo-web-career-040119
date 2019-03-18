@@ -59,9 +59,17 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |k, v|
     puts "#{k.capitalize}:"
-
+    
      holiday_hash[k].each do |k, v|
-       puts "  #{k.capitalize}: #{v.join(", ")}"
+       if k == :new_years
+         puts "  New Years: #{v.join(", ")}"
+       elsif k == :fourth_of_july
+         puts "  Fourth Of July: #{v.join(", ")}"
+       elsif k == :memorial_day
+         puts "  Memorial Day: #{v.join(", ")}"
+       else
+         puts "  #{k.capitalize}: #{v.join(", ")}"
+       end
      end
   end
 
